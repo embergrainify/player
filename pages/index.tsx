@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic';
+import { getName } from '../libs/names';
 
 const showCameras = () => {
   console.log('showCameras');
@@ -14,19 +15,28 @@ export default function Home() {
     ssr: false,
   })
 
+  if (typeof window !== 'undefined') {
+    console.log('On CLIENT');
+    console.log(getName());
+    const aud = new Audio('/Delegation - Darlin (I Think About You) (Remix).mp3');
+    aud.volume = 0.1;
+    aud.play();
+  }
+
+
   return (
     <div className='flex flex-col justify-center items-center gap-2'>
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IbIaMhU3_Vo"
+      {/* <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IbIaMhU3_Vo"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen />
+        allowFullScreen /> */}
 
       <div className='w-full bg-red-400'>
         Test
       </div>
 
-      <MediaDevices />
+      {/* <MediaDevices /> */}
 
       <footer className='bg-emerald-300 fixed bottom-0 h-16 flex flex-row w-full justify-around items-center'>
         <div className="w-10 cursor-pointer" onClick={showCameras}>

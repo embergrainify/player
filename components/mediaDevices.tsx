@@ -30,9 +30,11 @@ export default function mediaDevices() {
     test1();
     return (
         <>
-            {
+            {/* {
                 devices.forEach(device => `${device.kind}: ${device.label} id = ${device.deviceId}`)
-            }
+            } */}
+
+            test
             
         </>
     );

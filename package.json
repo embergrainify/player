@@ -1,5 +1,7 @@
 {
   "private": true,
+  "workspaces": ["friendly-words"],
+  "workspaces-read-more": "https://classic.yarnpkg.com/lang/en/docs/workspaces/",
   "scripts": {
     "dev": "next dev",
     "devs": "node server.js",
@@ -10,7 +12,8 @@
     "next": "latest",
     "next-pwa": "^5.6.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "friendly-words": "1.2.0"
   },
   "devDependencies": {
     "@types/node": "18.11.10",
