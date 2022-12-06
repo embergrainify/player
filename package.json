@@ -2,6 +2,8 @@
   "private": true,
   "workspaces": ["friendly-words"],
   "workspaces-read-more": "https://classic.yarnpkg.com/lang/en/docs/workspaces/",
+  "need-to-be-git-submodule-for-netlify": "git submodule add https://github.com/embergrainify/friendly-words.git",
+  "more-info-about-git-submodule": "https://www.atlassian.com/git/tutorials/git-submodule",
   "scripts": {
     "dev": "next dev",
     "devs": "node server.js",

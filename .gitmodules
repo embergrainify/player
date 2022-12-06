@@ -1,0 +1,3 @@
+[submodule "friendly-words"]
+	path = friendly-words
+	url = https://github.com/embergrainify/friendly-words.git
