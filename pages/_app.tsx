@@ -12,9 +12,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
         />
-        <meta name="description" content="Description" />
+        <meta name="description" content="Macaron Player" />
         <meta name="keywords" content="Keywords" />
-        <title>player</title>
+        <title>macaronPlayer</title>
 
         <link rel="manifest" href="/manifest.json" />
         <link

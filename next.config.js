@@ -39,6 +39,7 @@ const cacheConfig = [
 
 const withPWA = require('next-pwa')({
   dest: 'public',
+  disable: true,
   register: true,
   runtimeCaching: cacheConfig
 });
