@@ -18,9 +18,28 @@ export default function Home() {
   if (typeof window !== 'undefined') {
     console.log('On CLIENT');
     console.log(getName());
+
     const aud = new Audio('/Delegation - Darlin (I Think About You) (Remix).mp3');
     aud.volume = 0.1;
-    aud.play();
+    setTimeout(() => {
+      try {
+        aud.play();
+      } catch (err) {
+        console.error(err);
+      }
+    }, 3000);
+
+    navigator.permissions.query({ name: 'geolocation' }).then((result) => {
+      console.log('state: ', result.state);
+      if (result.state === 'granted') {
+        //showLocalNewsWithGeolocation();
+
+      } else if (result.state === 'prompt') {
+        // showButtonToEnableLocalNews();
+      }
+      // Don't do anything if the permission was denied.
+     });
+
   }
 
 
